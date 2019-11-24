@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import Title from './Title';
+import Appetizers from './Appetizers';
+import Main from './Main';
 import './App.css';
 
+//This will be the root component
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title></Title>
+      <div style={{display:'flex', flexDirection:'row'}}>
+        <Appetizers/>
+        <Main/>
+      </div>
     </div>
   );
 }

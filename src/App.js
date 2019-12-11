@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Title></Title>
-      <div style={{display:'flex', flexDirection:'row'}}>
+      <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}>
         <Appetizers/>
         <Main/>
       </div>
